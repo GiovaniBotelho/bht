@@ -102,7 +102,7 @@ function bht_1bit_nextStep() {
         "O arquivo possui " +
         file.length +
         " endereços => " +
-        ((file.length - erros) / file.length) * 100 +
+        Math.trunc(((file.length - erros) / file.length) * 100) +
         "% de acertos e " +
         erros +
         " prediçoes incorretas";
@@ -166,7 +166,7 @@ function bht_1bit_summary() {
         "O arquivo possui " +
         file.length +
         " endereços => " +
-        ((file.length - erros) / file.length) * 100 +
+        Math.trunc(((file.length - erros) / file.length) * 100) +
         "% de acertos e " +
         erros +
         " prediçoes incorretas";
@@ -303,7 +303,7 @@ function bht_2bits_nextStep() {
         "O arquivo possui " +
         file.length +
         " endereços => " +
-        ((file.length - erros) / file.length) * 100 +
+        Math.trunc(((file.length - erros) / file.length) * 100) +
         "% de acertos e " +
         erros +
         " prediçoes incorretas";
@@ -321,7 +321,7 @@ function bht_2bits_summary() {
     "O arquivo possui " +
     file.length +
     " endereços => " +
-    ((file.length - erros) / file.length) * 100 +
+    Math.trunc(((file.length - erros) / file.length) * 100) +
     "% de acertos e " +
     erros +
     " prediçoes incorretas";
