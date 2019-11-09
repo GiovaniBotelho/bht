@@ -6,12 +6,18 @@
   </head>
   <body>
     <input type="file" id="inputfile" onChange="lerArquivo(this.files)" />
-    <button onClick="bht_1bit_nextStep()">Próximo passo</button>
-    <button onClick="bht_1bit_summary()" style="float: inline">
+    <select name="preditor" id="preditor" onchange="selecionaPreditor()">
+      <option value="0">Selecionar preditor</option>
+      <option value="1">Preditor de 1 Bit</option>
+      <option value="2">Preditor de 2 Bits</option>
+    </select>
+    <button onClick="bht_nextStep()">Próximo passo</button>
+    <button onClick="bht_summary()" style="float: inline">
       Pular etapas
     </button>
     <div id="registros" style="display: inline; padding-left: 20px"></div>
-    <div style="width:100%">
+    <div id="legenda" style="padding-top: 20px;padding-bottom: 20px;"></div>
+    <div style="width:100%; display: inline-block">
       <div id="predicoes" style="float: left;width:30%"></div>
       <div id="enderecos" style="float: left;width:30%"></div>
     </div>
