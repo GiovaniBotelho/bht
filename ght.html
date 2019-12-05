@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GHT</title>
+    <script type="text/javascript" src="ght.js"></script>
+    <meta charset="utf-8" />
+  </head>
+  <body style="margin-top: 20px;">
+    <input type="number" id="m" onkeyup="setM()" placeholder="parametro 'm'" style="margin-right: 20px" autofocus/>
+    <input type="file" id="inputfile" onChange="lerArquivo(this.files)" disabled style="margin-right: 20px"/>    
+    <button id="btn1" onClick="ght_nextStep()" style="margin-right: 20px">Próximo passo</button>
+    <button id="btn2" onClick="ght_summary()" style="float: inline; margin-right: 20px">
+      Pular etapas
+    </button>
+    <a href="https://github.com/GiovaniBotelho/bht/blob/master/README.md" target="_blank">Descrição dos simuladores</a
+    >
+    <div id="registros" style="display: inline; padding-left: 20px;"></div>
+    <div style="width:100%; padding-top: 100px">
+      <div id="preditores" style="width:100%; justify-contents: center"></div>     
+    </div>
+  </body>
+  <script>
+    alert("Antes de selecionar o arquivo, escolha primeiro o valor de M");
+  </script>
+</html>
