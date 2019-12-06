@@ -77,7 +77,7 @@ Para executar o sistema "GHT", basta selecionar o arquivo "ght.html" dentro do d
 
 # 2. Descrição detalhada:
  Nesta etapa do trabalho foram implementados, o preditor global, a implementação foi feita na linguagem javascritp. A seguir teremos a descrição formal e detalhada do funcionamento de cada simulador:
- - **GHT **:
+ - **GHT**:
 	 1. **Leitura do arquivo com as predições**
 		 -	A princípio é realizada a leitura de um arquivo texto que contém as predições com seus devidos endereços e desvios. A leitura do arquivo é feita linha a linha, o que nos permite avaliar uma predição a cada leitura;
 	 2. **O endereçamento**:
