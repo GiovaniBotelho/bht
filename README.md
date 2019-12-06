@@ -57,7 +57,7 @@ A tela do `Preditor BHT` deve conter:
 	- Realizado;
 	- Acerto;
 	- Erro;
-	- Precisão.
+	- Precisão.<br>
 Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar uma página no browser contendo a interface de execução, para realizá-la bastar seguir os seguintes passos nas respectivas ordens:
 - No campo "parâmetro 'm' ", insira o valor de m que será usado para definir o tamanho do vetor de predições;
 
