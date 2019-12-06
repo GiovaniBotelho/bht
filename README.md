@@ -26,7 +26,7 @@ Para executar o sistema "BHT", basta selecionar o arquivo "bht.html" dentro do d
 	 2. **O endereçamento**:
 		 1. Cada linha do arquivo contém um endereço em hexadecimal. A princípio convertemos o número para binário e descartamos os dois bits menos significativos, após, é feita a conversão para inteiro que indicará em qual posição do vetor deverá ser feita a predição. 
 	 3. **A predição**:
-		 1. Para o preditor de um bit é utilizado o vetor  "predictions", e em cada posição contém o  desvio da predição;
+		 1. Para o preditor de dois bits é utilizado o vetor  "predictions", e em cada posição contém o  desvio da predição;
 		 2. Por default, o valor do desvio de todo o vetor  é  inicializado como `Tomado`;
 		 3.  Para cada linha lida do arquivo, o valor do desvio da predição deverá ser comparado com o valor do desvio da tupla na última posição do vetor. Desta forma, podemos garantir que a predição será feita com o resultado da predição passada.
 		 4.  As predições para arquivos de dois bits devem ser realizadas de acordo com a seguinte máquina de estados:
