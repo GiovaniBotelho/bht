@@ -16,10 +16,13 @@ function setM() {
 }
 
 function disable_button() {
-  var btn1 = document.getElementById("btn1");
-  var btn2 = document.getElementById("btn2");
-  btn1.disabled = true;
-  btn2.disabled = true;
+  var fileSelector = document.getElementById("inputfile");
+  if (fileSelector != undefined) {
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    btn1.disabled = true;
+    btn2.disabled = true;
+  }
 }
 
 function hexToBinario(num) {
@@ -175,6 +178,6 @@ function ght_summary() {
       ght_nextStep(false);
     }
     drawTable();
+    disable_button();
   }
-  disable_button();
 }
