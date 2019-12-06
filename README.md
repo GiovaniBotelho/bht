@@ -57,7 +57,8 @@ A tela do `Preditor BHT` deve conter:
 	- Realizado;
 	- Acerto;
 	- Erro;
-	- Precisão.<br>
+	- Precisão.
+	
 Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar uma página no browser contendo a interface de execução, para realizá-la bastar seguir os seguintes passos nas respectivas ordens:
 - No campo "parâmetro 'm' ", insira o valor de m que será usado para definir o tamanho do vetor de predições;
 
@@ -69,7 +70,7 @@ Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar u
 
 	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresentará na tela o resultado final (a execução demora alguns segundos, não se preocupe).
 
-- Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido ao lado dos dois botões a porcentagem de acertos e o número de erros.
+- Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido na tabela as porcentagens de acertos, o número de acertos e erros.
 ###############################################
 
 # 1. Informações de  execução do sistema:
@@ -83,7 +84,7 @@ Para executar o sistema "GHT", basta selecionar o arquivo "ght.html" dentro do d
 	 2. **O endereçamento**:
 		 1. Cada linha do arquivo contém um endereço em hexadecimal. A princípio convertemos o número para binário e descartamos os dois bits menos significativos, após, é feita a conversão para inteiro que indicará em qual posição do vetor deverá ser feita a predição. 
 	 3. **A predição**:
-		 1. Para o preditor global é utilizado o vetor  "predictions", e em cada posição contém um número inteiro que pode variar de 0 a 5;
+		 1. Para o preditor global é utilizado o vetor  "predictions", e em cada posição contém um número inteiro que pode variar de 0 a 3;
 		 2. Por default, o valor de cada posição do vetor é inicializado em dois;
 		 3.  Para cada linha lida do arquivo, o valor do desvio da predição deverá ser comparado com o valor do vetor. 
 			 - Se o valor for maior ou igual a dois e a predição lida for `Tomado`,  é considerado acerto e o valor do vetor é incrementado em um. Caso o valor do vetor já esteja em três, nada é feito. Se o valor da predição for `Não tomado`, o vetor é decrementado em um e é considerado erro.
@@ -103,6 +104,7 @@ A tela do `Preditor GHT` deve conter:
 	- Acerto;
 	- Erro;
 	- Precisão.
+	
 Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar uma página no browser contendo a interface de execução, para realizá-la bastar seguir os seguintes passos nas respectivas ordens:
 - No campo "parâmetro 'm' ", insira o valor de m que será usado para definir o tamanho do vetor de predições;
 
@@ -114,4 +116,4 @@ Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar u
 
 	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresentará na tela o resultado final (a execução demora alguns segundos, não se preocupe).
 
-- Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido ao lado dos dois botões a porcentagem de acertos e o número de erros.
+- Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido na tabela as porcentagens de acertos, o número de acertos e erros.
