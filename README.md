@@ -67,7 +67,7 @@ Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar u
 
 	- Selecionar o botão "Próximo passo", que executa o passo a passo do simulador, realizando a leitura de linha a linha do arquivo e exibindo o passo a passo das predições.
 
-	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresenterá na tela o resultado final (a execução demora alguns segundos, não se preocupe).
+	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresentará na tela o resultado final (a execução demora alguns segundos, não se preocupe).
 
 - Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido ao lado dos dois botões a porcentagem de acertos e o número de erros.
 ###############################################
@@ -112,6 +112,6 @@ Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar u
 
 	- Selecionar o botão "Próximo passo", que executa o passo a passo do simulador, realizando a leitura de linha a linha do arquivo e exibindo o passo a passo das predições.
 
-	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresenterá na tela o resultado final (a execução demora alguns segundos, não se preocupe).
+	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresentará na tela o resultado final (a execução demora alguns segundos, não se preocupe).
 
 - Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido ao lado dos dois botões a porcentagem de acertos e o número de erros.
