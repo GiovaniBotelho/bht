@@ -19,10 +19,13 @@ function setM() {
 }
 
 function disable_button() {
+  var select = document.getElementById('preditor')
   var btn1 = document.getElementById("btn1")
   var btn2 = document.getElementById("btn2")
-  btn1.disabled = true;
-  btn2.disabled = true;
+  if (select != 0){
+    btn1.disabled = true;
+    btn2.disabled = true;
+  }
 }
 
 function hexToBinario(num) {
@@ -235,6 +238,7 @@ function bht_2bits_summary() {
       bht_2bits_nextStep(false);
     }
     drawTable();
+    disable_button()
   }
 }
 
@@ -248,7 +252,6 @@ function bht_summary() {
   if (TIPO_PREDITOR == 0) alert("Nenhum preditor selecionado!");
   else if (TIPO_PREDITOR == 1) bht_1bit_summary();
   else bht_2bits_summary();
-  disable_button()
 }
 
 function selecionaPreditor() {
