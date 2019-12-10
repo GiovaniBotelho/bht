@@ -6,6 +6,19 @@ var index = 0;
 var TIPO_PREDITOR = 0; // 1 -> 1 BIT  e 2 => 2 BIT
 var m = undefined; //tamanho da tabela
 
+function exibirPorcentagem() {
+  var acertos = 0;
+  predictions.forEach(prediction => {
+    acertos += prediction.acerto;
+  });
+
+  var attr = document.getElementById("resultado");
+  let res = (acertos / file.length)*100
+
+  attr.innerHTML =
+    "Total de <b>" + acertos + "</b> acertos, logo <b>" + res.toFixed(2) + "%</b> de predições corretas.";
+}
+
 function setM() {
   var num = document.getElementById("m");
   var option = num.value;
@@ -69,7 +82,7 @@ function lerArquivo(files) {
     // console.log(event.target.result);
     file = event.target.result;
     file = file.split("\n");
-    atributos.innerText = "O arquivo possui " + file.length + " endereços";
+    atributos.innerText = "O arquivo possui " + file.length + " endereços.";
     for (var i = 0; i < file.length; i++) {
       line = file[i].split(" "); //linha completa
       let index = binToInteger(hexToBinario(line[0]));
@@ -167,6 +180,9 @@ function ght_nextStep(draw = true) {
 
     index++;
     if (draw) drawTable();
+  }
+  if (index == file.length) {
+    exibirPorcentagem();
   }
 }
 

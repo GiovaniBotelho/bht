@@ -55,7 +55,6 @@ Para executar os simuladores, basta abrir o arquivo bht.html, que irá iniciar u
 	- Selecionar o botão "Pular etapas", que realizará todas as predições e apenas apresentará na tela o resultado final (a execução demora alguns segundos, não se preocupe).
 
 - Após a execução, seja por "Próximo passo" ou "Pular etapas", será exibido na tabela as porcentagens de acertos, o número de acertos e erros.
-###############################################
 
 # 1. Informações de  execução do sistema:
 Para executar o sistema "GHT", basta selecionar o arquivo "ght.html" dentro do diretório /BHT.
