@@ -13,13 +13,8 @@ Para executar o sistema "BHT", basta selecionar o arquivo "bht.html" dentro do d
 		 2. Por default, o valor do desvio de todo o vetor  é  inicializado como `Tomado`;
 		 3.  Para cada linha lida do arquivo, o valor do desvio da predição deverá ser comparado com o valor do desvio da tupla na última posição do vetor. Desta forma, podemos garantir que a predição será feita com o resultado da predição passada.
 		 4.  As predições para arquivos de um bit devem ser realizadas de acordo com a seguinte máquina de estados:
-				```mermaid
-				graph LR
-				A((T)) -- NT --> B((NT))
-				B -- T --> A
-				A -- T --> A
-				B -- NT --> B
-				```
+		 ![1bit](https://github.com/GiovaniBotelho/bht/blob/master/1bit.PNG)
+				
  - **BHT de dois bits**: 
 	 1. **Leitura do arquivo com as predições**
 		 -	A princípio é realizada a leitura de um arquivo texto que contém as predições com seus devidos endereços e desvios. A leitura do arquivo é feita linha a linha, o que nos permite avaliar uma predição a cada leitura;
@@ -30,19 +25,8 @@ Para executar o sistema "BHT", basta selecionar o arquivo "bht.html" dentro do d
 		 2. Por default, o valor do desvio de todo o vetor  é  inicializado como `Tomado`;
 		 3.  Para cada linha lida do arquivo, o valor do desvio da predição deverá ser comparado com o valor do desvio da tupla na última posição do vetor. Desta forma, podemos garantir que a predição será feita com o resultado da predição passada.
 		 4.  As predições para arquivos de dois bits devem ser realizadas de acordo com a seguinte máquina de estados:
-				```mermaid
-				graph LR
-				A((T)) -- NT --> B((FT))
-				D((FNT)) -- NT --> C((NT))
+		 ![2bits](https://github.com/GiovaniBotelho/bht/blob/master/2bits.PNG)
 				
-				B -- T --> A
-				A -- T --> A
-				B -- NT --> C
-				C -- NT --> C
-				D -- T --> A
-				C -- T --> D
-				```
-
 # 3. Etapas de execução:
 A tela do `Preditor BHT` deve conter:
 - Campo `parâmetro m`;
