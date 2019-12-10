@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
   </head>
   <body style="margin-top: 20px;">
-    <input type="number" id="m" onkeyup="setM()" placeholder="parametro 'm'" style="margin-right: 20px" autofocus/>
+    <input type="number" id="m" onkeyup="setM()" placeholder="parametro 'm'" style="width: 100px; margin-right: 20px" autofocus/>
     <input type="file" id="inputfile" onChange="lerArquivo(this.files)" disabled style="margin-right: 20px"/>
     <select name="preditor" id="preditor" onchange="selecionaPreditor()" style="margin-right: 20px">
       <option value="0">Selecionar preditor</option>
@@ -17,9 +17,10 @@
     <button id="btn2" onClick="bht_summary()" style="float: inline; margin-right: 20px">
       Pular etapas
     </button>
-    <a href="https://github.com/GiovaniBotelho/bht/blob/master/README.md" target="_blank">
+    <a href="https://github.com/GiovaniBotelho/bht/blob/master/README.md" target="_blank" style="margin-right: 20px">
       Descrição dos simuladores
     </a>
+    <a href="home.html"><button>Voltar</button></a>
     <div id="registros" style="display: inline; padding-left: 20px;"></div>
     <div style="width:100%; padding-top: 100px">
       <div id="preditores" style="width:100%; justify-contents: center"></div>     
